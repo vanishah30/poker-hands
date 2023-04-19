@@ -14,7 +14,7 @@ jobs:
     # only testing on Node 18 now but could have done
     # several builds by adiing [16.x,18.x] etc
       matrix:
-        node-version: [18.x]
+        node-version: [16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
