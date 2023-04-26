@@ -149,7 +149,7 @@ module.exports = class CompareHands {
     return a;
   }
 
-  static checkIfNotContainDouble(hand1, hand2) {
+  static checkNotDuplicate(hand1, hand2) {
     let allCards = hand1.cards
     if (hand2 != null) {
       allCards = this.getUniqueArray(allCards.concat(hand2.cards))
