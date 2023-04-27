@@ -22,6 +22,8 @@ test('check that isTwoPair returns higher score for a two pair hand', () => {
     let hand2 = new Hand('♣J', '♥J', '♥9', '♦9', '♣7');
     let hand1Score = CompareHands.isTwoPair(hand1);
     let hand2Score = CompareHands.isTwoPair(hand2)
+    console.log("hand1Score", hand1Score);
+    console.log("hand2Score", hand2Score);
     expect(hand2Score).toBeGreaterThan(hand1Score);
 });
 

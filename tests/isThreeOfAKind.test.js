@@ -22,6 +22,8 @@ test('check that isThreeOfAKind returns a higher score for a stronger hand', () 
   let hand2 = new Hand('♥6', '♦6', '♣6', '♠3', '♠7');
   let hand1Score = CompareHands.isThreeOfAKind(hand1);
   let hand2Score = CompareHands.isThreeOfAKind(hand2);
+  console.log("hand1Score", hand1Score);
+  console.log("hand2Score", hand2Score);
   expect(hand2Score).toBeGreaterThan(hand1Score);
 
 });

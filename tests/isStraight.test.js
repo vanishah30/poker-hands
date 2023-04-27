@@ -22,6 +22,8 @@ test('check that isStraight returns a higher score for a stronger hand(if two ha
   let hand2 = new Hand('♥6', '♦5', '♣4', '♥3', '♦2');
   let hand1Score = CompareHands.isStraight(hand1);
   let hand2Score = CompareHands.isStraight(hand2);
+  console.log("hand1Score", hand1Score);
+  console.log("hand2Score", hand2Score);
   expect(hand1Score).toBeGreaterThan(hand2Score);
 
 });

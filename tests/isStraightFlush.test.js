@@ -21,7 +21,9 @@ test('check that isStraightFlush returns a higher score for a stronger hand(if t
   let hand1 = new Hand('♥T', '♥9', '♥8', '♥7', '♥6');
   let hand2 = new Hand('♥7', '♥6', '♥5', '♥4', '♥3');
   let hand1Score = CompareHands.isStraightFlush(hand1);
-  let hand2Score = CompareHands.isStraightFlush(hand2);
+    let hand2Score = CompareHands.isStraightFlush(hand2);
+    console.log("hand1Score", hand1Score);
+    console.log("hand2Score", hand2Score);
   expect(hand1Score).toBeGreaterThan(hand2Score);
 
 });

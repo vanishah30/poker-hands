@@ -25,5 +25,7 @@ test('check that isFlush returns a higher score for a stronger hand (if two hand
   let hand2 = new Hand('♦T', '♦9', '♦5', '♦Q', '♦A');
   let hand1Score = CompareHands.isFlush(hand1);
   let hand2Score = CompareHands.isFlush(hand2);
+  console.log("hand1Score", hand1Score);
+  console.log("hand2Score", hand2Score);
   expect(hand2Score).toBeGreaterThan(hand1Score);
 });

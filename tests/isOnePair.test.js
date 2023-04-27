@@ -17,6 +17,8 @@ test('Test that isOnePair returns highter score for one pair', () => {
     let hand2 = new Hand('♥Q', '♦J', '♥7', '♣3', '♣2');
     let hand1Score = CompareHands.isOnePair(hand1);
     let hand2Score = CompareHands.isOnePair(hand2);
+    console.log("hand1Score", hand1Score);
+    console.log("hand2Score", hand2Score);
     expect(hand1Score).toBeGreaterThan(hand2Score);
 });
 
